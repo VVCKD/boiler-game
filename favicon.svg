@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- BOILER ITW 공식 심볼 (2026-10-23 확정, 파비콘 2차 시안 19-7 "아래서 위로 사라짐").
+       웹·앱·인쇄 어디서든 이 파일이 원본이다. 값을 바꾸지 말 것.
+       - 바탕: --void #0A0807, 32×32 정사각, 라운드 없음
+       - 김: boiler.run 헤더 김 3줄 (한 번 휘는 S, 둥근 끝). 잉크 경계 viewBox 33.55 33 32.9 34 를 x7 y5.5 w18 h22 안에 맞춤
+       - 획: 7 (김 좌표계). 색은 줄마다 아래 --flare #E8101B → 55% --lamp #C1372B → 위 --void #0A0807
+       - 번짐: feGaussianBlur 1.4 0.3 (가로 1.4 · 세로 0.3, 32 격자 기준) -->
+  <rect width="32" height="32" fill="#0A0807"/>
+  <defs>
+    <filter id="bitw-blur" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="1.4 0.3"/>
+    </filter>
+    <linearGradient id="bitw-fade" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E8101B"/>
+      <stop offset=".55" stop-color="#C1372B"/>
+      <stop offset="1" stop-color="#0A0807"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#bitw-blur)">
+    <svg x="7" y="5.5" width="18" height="22" viewBox="33.55 33 32.9 34" overflow="visible">
+      <g fill="none" stroke="url(#bitw-fade)" stroke-width="7" stroke-linecap="round">
+        <path d="M38 64C33 57 43 43 38 36"/>
+        <path d="M50 64C45 57 55 43 50 36"/>
+        <path d="M62 64C57 57 67 43 62 36"/>
+      </g>
+    </svg>
+  </g>
+</svg>
