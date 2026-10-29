@@ -1,0 +1,5 @@
+/* Paperlogy — BOILER 한글 서체 (2026-10-11 확정, boiler.run 과 동일 파일). 영문은 Archivo 가 앞에 와서 한글만 여기로 떨어진다. */
+@font-face{font-family:'Paperlogy';src:url(Paperlogy-4Regular.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url(Paperlogy-6SemiBold.woff2) format('woff2');font-weight:500 600;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url(Paperlogy-7Bold.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Paperlogy';src:url(Paperlogy-8ExtraBold.woff2) format('woff2');font-weight:800;font-display:swap}
